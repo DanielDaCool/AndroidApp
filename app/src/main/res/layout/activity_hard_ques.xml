@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".hardQues">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="136dp">
+
+
+        <LinearLayout
+            android:layout_width="409dp"
+            android:layout_height="729dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            tools:layout_editor_absoluteX="1dp"
+            tools:layout_editor_absoluteY="1dp"
+            android:padding="50px">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="שאלות בנושא רקורסיה למומחים"
+                android:textSize="100px"
+                android:layout_marginTop="35px"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="100px"
+                android:text="1. כיצד מתמודדים שפות תכנות מסוימות עם אופטימיזציה של רקורסיה אחורית ומהו היתרון בכך?"
+                android:textSize="50px" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RadioButton
+                    android:id="@+id/radioButton0"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="הן מבצעות ביטול קריאה של הקריאה הרקורסיבית האחרונה, מה שמפחית את העומס על המחסנית." />
+
+                <RadioButton
+                    android:id="@+id/radioButton1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="הן מקבצות את כל הקריאות הרקורסיביות האחרונות למבנה נתונים מוערם כדי לייעל את העיבוד." />
+
+                <RadioButton
+                    android:id="@+id/radioButton2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="הן משכפלות את הפונקציה למספר עותקים, מה שמבטל את הצורך בזיכרון מחסנית." />
+
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="193dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="70px"
+                android:text="בדיקה" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:text="2. כיצד ניתן לשפר ביצועים של פונקציה רקורסיבית עם תת-בעיות חופפות (כגון חישוב מספרי פיבונאצ'י) מבלי לשנות את מבנה הרקורסיה?"
+                android:textSize="50px" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RadioButton
+                    android:id="@+id/radioButton3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="באמצעות שימוש בזיכרון מטמון (Memoization) כדי לשמור תוצאות של חישובים קודמים." />
+
+                <RadioButton
+                    android:id="@+id/radioButton4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="באמצעות מעבר לרקורסיה אחורית המאפשרת שימוש בקומפיילר לאופטימיזציה." />
+                <RadioButton
+                    android:id="@+id/radioButton5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="על ידי שימוש בתנאי עצירה נוספים להקטנת כמות הקריאות.." />
+
+
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="193dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="70px"
+                android:text="בדיקה" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:text="3. איזו טכניקה עשויה לשפר את קריאות הקוד הרקורסיבי במצבים בהם נדרשת טיפול במצבים מרובים, אך אינה משפיעה על ביצועי הרקורסיה?"
+                android:textSize="50px" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <RadioButton
+                    android:id="@+id/radioButton6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="שימוש בפונקציות עזר לפישוט תנאי עצירה וטיפול במצבים שונים." />
+                <RadioButton
+                    android:id="@+id/radioButton7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="שימוש במשתנה יחיד שעוקב אחר כל מצב במקביל." />
+
+
+                <RadioButton
+                    android:id="@+id/radioButton8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="שימוש ברקורסיה אחורית בכל פעם שהמצב מורכב." />
+            </RadioGroup>
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="193dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="70px"
+                android:text="בדיקה" />
+
+            <Button
+                android:id="@+id/button7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="חזור לשאלון למתקדמים" />
+
+            <Button
+                android:id="@+id/button8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="חזור לשאלון למתחילים" />
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

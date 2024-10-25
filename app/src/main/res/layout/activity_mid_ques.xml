@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".midQues">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="136dp">
+
+
+        <LinearLayout
+            android:layout_width="409dp"
+            android:layout_height="729dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            tools:layout_editor_absoluteX="1dp"
+            tools:layout_editor_absoluteY="1dp"
+            android:padding="50px">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="שאלות בנושא רקורסיה למתקדמים"
+                android:textSize="100px"
+                android:layout_marginTop="35px"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="100px"
+                android:text="1. מה ההבדל בין רקורסיה קדמית לרקורסיה אחורית?"
+                android:textSize="50px" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RadioButton
+                    android:id="@+id/radioButton0"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="רקורסיה קדמית מבצעת חישובים לאחר הקריאה הרקורסיבית, ורקורסיה אחורית מבצעת חישובים לפני הקריאה." />
+
+                <RadioButton
+                    android:id="@+id/radioButton1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="קורסיה קדמית אינה דורשת תנאי עצירה, בעוד שרקורסיה אחורית דורשת." />
+
+                <RadioButton
+                    android:id="@+id/radioButton2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="רקורסיה אחורית יעילה יותר מבחינת ביצועים, כיוון שמבצעים חישובים לפני הקריאה הרקורסיבית." />
+
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="193dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="70px"
+                android:text="בדיקה" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:text="2. מהו היתרון בשימוש ברקורסיה אחורית מבחינת ביצועים במקרים מסויימים?"
+                android:textSize="50px" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RadioButton
+                    android:id="@+id/radioButton3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="קומפיילרים מסוימים יכולים לבצע אופטימיזציה כך שהקריאה הרקורסיבית האחרונה לא תשתמש במחסנית נוספת." />
+
+                <RadioButton
+                    android:id="@+id/radioButton4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="היא מבטלת את הצורך בתנאי עצירה." />
+
+                <RadioButton
+                    android:id="@+id/radioButton5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="היא מאפשרת שימוש בכלי ניתוח גיאומטריים לחישוב מהיר יותר." />
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="193dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="70px"
+                android:text="בדיקה" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:text="3.באיזו סיטואציה עדיף להימנע משימוש ברקורסיה ולבחור בשיטה איטרטיבית (לולאות) במקום?"
+                android:textSize="50px" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <RadioButton
+                    android:id="@+id/radioButton6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="כאשר כל חישוב דורש תנאי עצירה שונה." />
+                <RadioButton
+                    android:id="@+id/radioButton7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="כאשר הקלט גדול מאד ויכול לגרום לשגיאת Stack Overflow." />
+
+
+                <RadioButton
+                    android:id="@+id/radioButton8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="כאשר אין פונקציה נוספת שתזדקק לתוצאה של הפונקציה הרקורסיבית." />
+            </RadioGroup>
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="193dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="70px"
+                android:text="בדיקה" />
+
+            <Button
+                android:id="@+id/button8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="עבור לשאלון למומחים" />
+
+            <Button
+                android:id="@+id/button7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="חזור לשאלון למתחילים" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
