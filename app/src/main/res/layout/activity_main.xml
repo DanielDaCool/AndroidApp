@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@color/black">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -29,6 +30,7 @@
                 android:text="שאלות בנושא רקורסיה למתחילים"
                 android:textSize="100px"
                 android:layout_marginTop="35px"
+                android:textColor="@color/white"
                 android:gravity="center"/>
 
             <TextView
@@ -37,7 +39,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="100px"
                 android:text="1. מהי רקורסיה?"
-                android:textSize="50px" />
+                android:textSize="50px"
+                android:textColor="@color/white"/>
 
             <RadioGroup
                 android:layout_width="match_parent"
@@ -47,19 +50,22 @@
                     android:id="@+id/radioButton0"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="פעולה בה פונקציה קוראת לעצמה ישירות או בעקיפין." />
+                    android:text="פעולה בה פונקציה קוראת לעצמה ישירות או בעקיפין."
+                    android:textColor="@color/white"/>
 
                 <RadioButton
                     android:id="@+id/radioButton1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="תהליך בו מחלקים בעיה לתת-בעיות." />
+                    android:text="תהליך בו מחלקים בעיה לתת-בעיות."
+                    android:textColor="@color/white"/>
 
                 <RadioButton
                     android:id="@+id/radioButton2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="פרוצדורה שחוזרת על עצמה בלולאה עד שהיא מסתיימת." />
+                    android:text="פרוצדורה שחוזרת על עצמה בלולאה עד שהיא מסתיימת."
+                    android:textColor="@color/white"/>
 
             </RadioGroup>
 
@@ -76,7 +82,8 @@
                 android:layout_height="wrap_content"
 
                 android:text="2. מה עלול לקרות אם לא מגדירים תנאי עצירה לפונקציה רקורסיבית?"
-                android:textSize="50px" />
+                android:textSize="50px"
+                android:textColor="@color/white"/>
 
             <RadioGroup
                 android:layout_width="match_parent"
@@ -86,19 +93,22 @@
                     android:id="@+id/radioButton3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="הפונקציה תבצע אינספור חזרות ויגרום לשגיאת Stack Overflow." />
+                    android:text="הפונקציה תבצע אינספור חזרות ויגרום לשגיאת Stack Overflow."
+                    android:textColor="@color/white"/>
 
                 <RadioButton
                     android:id="@+id/radioButton4"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="הפונקציה תפסיק אוטומטית לאחר 10 חזרות." />
+                    android:text="הפונקציה תפסיק אוטומטית לאחר 10 חזרות."
+                    android:textColor="@color/white"/>
 
                 <RadioButton
                     android:id="@+id/radioButton5"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="הפונקציה תריץ רק את ההפעלה הראשונה ולא תחזור לעצמה." />
+                    android:text="הפונקציה תריץ רק את ההפעלה הראשונה ולא תחזור לעצמה."
+                    android:textColor="@color/white"/>
             </RadioGroup>
 
             <Button
@@ -106,7 +116,8 @@
                 android:layout_width="193dp"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="70px"
-                android:text="בדיקה" />
+                android:text="בדיקה"
+                android:textColor="@color/white"/>
 
             <TextView
                 android:id="@+id/textView6"
@@ -114,7 +125,8 @@
                 android:layout_height="wrap_content"
 
                 android:text="3. מה מהבאים מתאר תהליך רקורסיבי עם שני תנאי עצירה?"
-                android:textSize="50px" />
+                android:textSize="50px"
+                android:textColor="@color/white"/>
 
             <RadioGroup
                 android:layout_width="match_parent"
@@ -124,21 +136,22 @@
                     android:id="@+id/radioButton6"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="התהליך עוצר רק כשהוא מגיע לערך שלילי.
-" />
+                    android:text="התהליך עוצר רק כשהוא מגיע לערך שלילי."
+                    android:textColor="@color/white"/>
 
                 <RadioButton
                     android:id="@+id/radioButton7"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="התהליך יכול לעצור בכמה מצבים, בהתאם לתנאים מסוימים.
-" />
+                    android:text="התהליך יכול לעצור בכמה מצבים, בהתאם לתנאים מסוימים."
+                    android:textColor="@color/white"/>
 
                 <RadioButton
                     android:id="@+id/radioButton8"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="התהליך מתחיל רק אם מתקיימים שני התנאים במקביל." />
+                    android:text="התהליך מתחיל רק אם מתקיימים שני התנאים במקביל."
+                    android:textColor="@color/white"/>
             </RadioGroup>
             <Button
                 android:id="@+id/button3"
