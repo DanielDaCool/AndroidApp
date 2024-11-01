@@ -10,7 +10,8 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="136dp">
+        tools:layout_editor_absoluteY="136dp"
+        android:background="@color/black">
 
 
         <LinearLayout
@@ -29,7 +30,8 @@
                 android:text="שאלות בנושא רקורסיה למתקדמים"
                 android:textSize="100px"
                 android:layout_marginTop="35px"
-                android:gravity="center"/>
+                android:gravity="center"
+                android:textColor="@color/white"/>
 
             <TextView
                 android:id="@+id/textView4"
@@ -37,7 +39,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="100px"
                 android:text="1. מה ההבדל בין רקורסיה קדמית לרקורסיה אחורית?"
-                android:textSize="50px" />
+                android:textSize="50px"
+                android:textColor="@color/white"/>
 
             <RadioGroup
                 android:layout_width="match_parent"
@@ -47,19 +50,22 @@
                     android:id="@+id/radioButton0"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="רקורסיה קדמית מבצעת חישובים לאחר הקריאה הרקורסיבית, ורקורסיה אחורית מבצעת חישובים לפני הקריאה." />
+                    android:text="רקורסיה קדמית מבצעת חישובים לאחר הקריאה הרקורסיבית, ורקורסיה אחורית מבצעת חישובים לפני הקריאה."
+                    android:textColor="@color/white"/>
 
                 <RadioButton
                     android:id="@+id/radioButton1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="קורסיה קדמית אינה דורשת תנאי עצירה, בעוד שרקורסיה אחורית דורשת." />
+                    android:text="קורסיה קדמית אינה דורשת תנאי עצירה, בעוד שרקורסיה אחורית דורשת."
+                    android:textColor="@color/white"/>
 
                 <RadioButton
                     android:id="@+id/radioButton2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="רקורסיה אחורית יעילה יותר מבחינת ביצועים, כיוון שמבצעים חישובים לפני הקריאה הרקורסיבית." />
+                    android:text="רקורסיה אחורית יעילה יותר מבחינת ביצועים, כיוון שמבצעים חישובים לפני הקריאה הרקורסיבית."
+                    android:textColor="@color/white"/>
 
             </RadioGroup>
 
@@ -76,7 +82,8 @@
                 android:layout_height="wrap_content"
 
                 android:text="2. מהו היתרון בשימוש ברקורסיה אחורית מבחינת ביצועים במקרים מסויימים?"
-                android:textSize="50px" />
+                android:textSize="50px"
+                android:textColor="@color/white"/>
 
             <RadioGroup
                 android:layout_width="match_parent"
@@ -86,18 +93,21 @@
                     android:id="@+id/radioButton3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:textColor="@color/white"
                     android:text="קומפיילרים מסוימים יכולים לבצע אופטימיזציה כך שהקריאה הרקורסיבית האחרונה לא תשתמש במחסנית נוספת." />
 
                 <RadioButton
                     android:id="@+id/radioButton4"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:textColor="@color/white"
                     android:text="היא מבטלת את הצורך בתנאי עצירה." />
 
                 <RadioButton
                     android:id="@+id/radioButton5"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:textColor="@color/white"
                     android:text="היא מאפשרת שימוש בכלי ניתוח גיאומטריים לחישוב מהיר יותר." />
             </RadioGroup>
 
@@ -112,6 +122,7 @@
                 android:id="@+id/textView6"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textColor="@color/white"
 
                 android:text="3.באיזו סיטואציה עדיף להימנע משימוש ברקורסיה ולבחור בשיטה איטרטיבית (לולאות) במקום?"
                 android:textSize="50px" />
@@ -125,11 +136,13 @@
                     android:id="@+id/radioButton6"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:textColor="@color/white"
                     android:text="כאשר כל חישוב דורש תנאי עצירה שונה." />
                 <RadioButton
                     android:id="@+id/radioButton7"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:textColor="@color/white"
                     android:text="כאשר הקלט גדול מאד ויכול לגרום לשגיאת Stack Overflow." />
 
 
@@ -137,6 +150,7 @@
                     android:id="@+id/radioButton8"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:textColor="@color/white"
                     android:text="כאשר אין פונקציה נוספת שתזדקק לתוצאה של הפונקציה הרקורסיבית." />
             </RadioGroup>
             <Button
