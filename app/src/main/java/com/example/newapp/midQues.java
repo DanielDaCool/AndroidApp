@@ -39,12 +39,14 @@ public class midQues extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(midQues.this, hardQues.class));
+                finish();
             }
         });
         btnToPrev.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(midQues.this, MainActivity.class));
+                finish();
             }
         });
 

@@ -36,6 +36,7 @@ public class hardQues extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(hardQues.this, midQues.class));
+                finish();
             }
         });
 
@@ -43,6 +44,7 @@ public class hardQues extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(hardQues.this, MainActivity.class));
+                finish();
             }
         });
 
